@@ -1,20 +1,20 @@
 {
   "name": "@username/hello-next",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "It is next demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "supervisor --watch server,server.js server.js"
   },
   "keywords": [],
-  "scripts": {
-    "dev": "next"
-  },
-  "author": "",
+  "author": "mayo",
   "license": "ISC",
   "dependencies": {
+    "koa": "2.5.0",
+    "koa-router": "7.4.0",
     "next": "8.0.3",
     "react": "16.8.4",
-    "react-dom": "16.8.4"
+    "react-dom": "16.8.4",
+    "supervisor": "0.12.0"
   }
 }
