@@ -5,4 +5,5 @@ package-lock.json
 dist
 static_url.ini
 *.tar.gz
+.vscode
 .history

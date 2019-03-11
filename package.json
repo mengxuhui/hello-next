@@ -1,15 +1,25 @@
 {
-  "name": "@username/hello-next",
+  "name": "hello-next",
   "version": "1.0.0",
   "description": "It is next demo",
   "main": "server.js",
   "scripts": {
-    "dev": "supervisor --watch server,server.js server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "supervisor --watch server,server.js server.js",
+    "build": "rm -rf .next/ && next build",
+    "start_test": "pm2 start test.ecosystem.config.js --env test",
+    "start_preview": "pm2 start preview.ecosystem.config.js --env preview",
+    "start_production": "pm2 start production.ecosystem.config.js --env production",
+    "restart_test": "pm2 restart test.ecosystem.config.js --env test",
+    "restart_preview": "pm2 restart preview.ecosystem.config.js --env preview",
+    "restart_production": "pm2 restart production.ecosystem.config.js --env production",
+    "stop": "pm2 stop hello-next"
   },
   "keywords": [],
   "author": "mayo",
   "license": "ISC",
   "dependencies": {
+    "kafka-node": "4.0.2",
     "koa": "2.5.0",
     "koa-router": "7.4.0",
     "next": "8.0.3",

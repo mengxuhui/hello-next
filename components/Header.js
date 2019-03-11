@@ -1,16 +1,14 @@
-import Link from 'next/link'
+/*
+ * @Author: mengxuhui214175@sogou-inc.com 
+ * @Date: 2019-03-08 11:07:08 
+ * @Last Modified by: mengxuhui
+ * @Last Modified time: 2019-03-08 11:21:37
+ */
 
-const linkStyle = {
-    marginRight: 15
-}
-const Header = () => (
+const Header = (props) => (
     <div>
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
-        </Link>
+        <a href="/index" style={{ marginLeft: '40px' }}>Home</a>
+        <a href="/about" style={{ marginLeft: '40px' }}>About</a>
     </div>
 )
 
