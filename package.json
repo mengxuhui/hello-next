@@ -22,7 +22,7 @@
     "kafka-node": "4.0.2",
     "koa": "2.5.0",
     "koa-router": "7.4.0",
-    "next": "8.0.3",
+    "next": "9.3.3",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "supervisor": "0.12.0"
