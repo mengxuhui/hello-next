@@ -10,6 +10,6 @@ const Header = (props) => (
         <a href="/index" style={{ marginLeft: '40px' }}>Home</a>
         <a href="/about" style={{ marginLeft: '40px' }}>About</a>
     </div>
-)
+);
 
-export default Header
+export default Header;
