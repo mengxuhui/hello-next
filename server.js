@@ -2,7 +2,7 @@
  * @@Description: web服务
  * @Author: i.mengxh@gmail.com
  * @Date: 2020-09-15 17:09:34
- * @LastEditTime: 2020-09-15 17:14:54
+ * @LastEditTime: 2020-09-15 17:18:47
  * @LastEditors: i.mengxh@gmail.com
  */
 const Koa = require('koa');
@@ -10,7 +10,7 @@ const Router = require('koa-router');
 const next = require('next');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
-// const handle = app.getRequestHandler();
+const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
     const server = new Koa();
